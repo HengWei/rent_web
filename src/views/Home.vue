@@ -31,11 +31,11 @@
             
             <div class="col-sm-6 col-md-6 py-6">
                 <div class="input-group mb-3">
-                <label for="distinct" class="text-white">距離學校 {{distinct}} KM </label>
+                <label for="distinct" class="text-white">距離學校 {{distinct}} 公里 </label>
                 <input type="range" v-model="distinct" class="custom-range"  id="distinct" min="0" max="15" step="1">
               </div>
               <div class="input-group mb-3">
-                <label for="customRange1" class="text-white">每月租金上限 {{amount}} NTD/月 </label>
+                <label for="customRange1" class="text-white">每月租金上限 {{amount}} 元/月 </label>
                 <input type="range" v-model="amount" class="custom-range" min="0" max="50000" step="500" id="customRange1">
               </div>
             </div>
