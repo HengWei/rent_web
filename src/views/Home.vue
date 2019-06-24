@@ -63,17 +63,20 @@
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <!-- <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/src/image/C_1.jpg">  -->
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <a href="/detail"><svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg></a>
             <div class="card-body">
               <p class="card-text">
-                地址: 士林區菁山路110巷17號<br>
-                租金: 5000元/月<br>
-                房型: 套房<br>
-
+                租金: 5000元/月                 
+              </p>
+              <p class="card-text">
+                距離: 1.6 公里                 
+              </p>
+              <p class="card-text"> 
+                地址: 台北市士林區菁山路110巷17號               
               </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">詳細資料</button>
+                  <a href="/detail"><button type="button" class="btn btn-sm btn-outline-secondary">詳細資料</button></a>
                   <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                 </div>
                 <!-- <small class="text-muted">9 mins</small> -->
@@ -116,6 +119,10 @@
         padding-top: 1.5rem!important;
       }
 
+      .custom-range{
+        margin: 0 1.5rem;
+      }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -132,18 +139,12 @@ export default {
     return {      
       distinct: 0,
       amount : 0,
-      rentType : 1,
+      rentType : 0,
       sex: 0    
       
     }
   },
   methods:{
-    callInfo(id) {      
-      this.info = this.data.find(d=> d.id ===id);
-      $('#exampleModal').modal('show');
-    }
-
-    
   }
 }
 </script>
